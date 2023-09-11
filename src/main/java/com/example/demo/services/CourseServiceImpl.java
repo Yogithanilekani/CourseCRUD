@@ -21,6 +21,7 @@ public class CourseServiceImpl implements CourseService {
 	public String addCourse(Course course) {
 		// TODO Auto-generated method stub
 		courseRepo.save(course);
+		Course c= new Course();
 //		String abc = course.getTitle().toLowerCase();
 		return "added course "+course.getTitle();
 	}
